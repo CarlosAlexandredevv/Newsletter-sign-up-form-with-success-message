@@ -26,7 +26,155 @@ p{
     font-size: 16px;
 }
 
+li{
+    color: var(--charcoalGrey);
+}
+
+input{
+    width: 375px;
+    height: 46px;
+    border: 0.8px solid var(--grey);
+    border-radius: 8px;
+}
+
+.data button{
+    width: 376px;
+    height: 52px;
+    border-radius: 8px;
+    margin: 24px 0 0 0;
+    background: var(--darkSlateGrey);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.img{
+    position: absolute;
+    padding: 24px;
+    left: 50.8%;
+}
+
 .card{
     width: 930px;
+    height: 640px;
     background: var(--white);
+    border-radius: 35px;
+    display: n;
+}
+
+.card h1{
+    color: var(--charcoalGrey);
+    padding: 90px 0 0 80px;
+    font-weight: 700;
+    font-size: 57px;
+}
+
+.card p{
+    color: var(--charcoalGrey);
+    font-weight: 400;
+    padding: 26px 0 0 80px;
+}
+
+.test{
+    display:flex;
+    flex-direction: row;
+    padding: 12px 0 0 80px;
+    gap: 16px;
+}
+
+.test:first-child{
+    display:flex;
+    flex-direction: row;
+    padding: 30px 0 0 80px;
+    gap: 16px;
+}
+
+
+.email{
+    color: var(--darkSlateGrey);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 0 12px 0;
+}
+
+
+.data{
+    display: flex;
+    flex-direction: column;
+    padding: 54px 0 0 80px;
+}
+
+.data button:hover{
+    transition: 0.3s;
+    background: linear-gradient(to right, hsl(342, 100%, 65%), var(--tomato));
+    border:none;
+    box-shadow: 0 4px 6px rgba(231, 95, 125, 0.6), 0 8px 20px rgba(231, 114, 79, 0.6);
+}
+
+input[type="email"] {
+    padding: 10px;
+    text-indent: 10px;
+}
+
+.thanks{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    height: 520px;
+    background:var(--white);
+    border-radius: 35px;
+    flex-direction: column;
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+
+.success{
+    padding: 48px 0 0 64px;
+}
+
+.thanks h1{
+    padding: 30px 0 0 64px;
+    font-size: 56px;
+    color: var(--darkSlateGrey);
+    font-weight: 700;
+}
+
+.thanks p {
+    padding: 22px 0 0 64px;
+    color: var(--charcoalGrey);
+    font-weight: 400;
+}
+
+.user{
+    color: var(--darkSlateGrey);
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.thanks button{
+    width: 376px;
+    height: 52px;
+    border-radius: 8px;
+    margin: 46px 0px 0 62px;
+    background: var(--darkSlateGrey);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.thanks button:hover{
+   transition: 0.3s;
+    background: linear-gradient(to right, hsl(342, 100%, 65%), var(--tomato));
+    border:none;
+    box-shadow: 0 4px 6px rgba(231, 95, 125, 0.6), 0 8px 20px rgba(231, 114, 79, 0.6);
+    
+}
+
+.ativo{
+    height: 520px;
+}
+
+.ok{
+    display: none;
 }
