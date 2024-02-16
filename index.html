@@ -2,56 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter-sign-up-form-with-success-message</title>
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="card">
-  <div class="img">
-    <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
-  </div>
-  <div>
-  <h1>Stay updated!</h1>
-  <p>Join 60,000+ product managers receiving monthly <br>updates on:</p>
-</div>
-  <div class="list">
-    
-      <div class="test">
-        <img src="assets/images/icon-list.svg" alt="">
-        <li>Product discovery and building what matters</li>
-      </div>
-
-      <div class="test">
-        <img src="assets/images/icon-list.svg" alt="">
-        <li>Measuring to ensure updates are a success</li>
-      </div>
-
-      <div class="test">
-        <img src="assets/images/icon-list.svg" alt="">
-        <li>And much more!</li>
-      </div>
+  <div class="card">
+    <div class="text-container">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <div>
+        <ul>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="">
+            <p>  Product discovery and building what matters</p>
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="">
+            <p>  Measuring to ensure updates are a success</p>
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="">
+            <p>    And much more!            </p>
+          </li>
+        </ul>
+      </div> 
+      <form class="form">
+        <div class="email">
+          <div class="email-label">
+          <label for="email">
+            Email address
+          </label>
+          <span>Valid email required</span>
+          </div>
+          <input type="text" id="email" placeholder="email@company.com" maxlength="30">
+        </div>
+        <button>Subscribe to monthly newsletter</button>
+      </form>
     </div>
-
-   <div class="data">
-    <span class="email">Email address</span>
-    <input type="email"  maxlength="50" placeholder="email@company.com">
-    <button>Subscribe to monthly newsletter</button>
+    <div class="image-container">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="img_desktop">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="img_mobile">
+    </div>
   </div>
-</div>
 
-<div class="thanks">
-  <div>
-    <img class="success" src="assets/images/icon-success.svg" alt="">
-  </div>
-  <h1>Thanks for <br>subscribing!</h1>
-  <p>A confirmation email has been sent to<br><span class="user">Email</span> 
-    Please open it and click<br>the button inside to confirm your subscription.</p>
-    <button>Dismiss message</button>
+  <div class="thanks desativado">
+    <div>
+      <img src="assets/images/icon-success.svg" alt="" class="img-thanks">
+    </div>
+    <div class="content">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span class="user"></span> 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="button-dismiss">Dismiss message</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
